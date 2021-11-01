@@ -1,0 +1,55 @@
+.skills{
+  padding: 101px 0;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 3 span;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: $title_color;
+  }
+
+  .container {
+    grid-column: 3 span;
+  }
+
+  &__list-item {
+    position: relative;
+    padding-bottom: 24px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::after,
+    &::before {
+      content: '';
+      height: 4px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    &::after {
+      width: 350px;
+      background-color: $element_color;
+    }
+
+    &::before {
+      width: 445px;
+      background-color: $defoult-text_color;
+    }
+  }
+}

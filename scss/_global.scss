@@ -1,0 +1,51 @@
+/* reset styles */
+@import 'variables';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  color: $defoult-text_color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  max-width: 1105px;
+  margin: 0 auto;
+}
+
+.wrapper-section {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 50px;
+  color: $title_color;
+}
+
+.center {
+  text-align: center;
+}
+
+.section-subtitle {
+  line-height: 26px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1279px) {
+
+  .wrapper {
+    padding: 0 18px;
+  }
+
+  .section-title {
+    margin-bottom: 34px;
+  }
+}

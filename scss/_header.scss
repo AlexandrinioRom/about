@@ -1,0 +1,40 @@
+.header {
+  padding-top: 57px;
+  background-color: $main-bg_color;
+
+  &__wrapper {
+    @include display-wrap-justify (flex, wrap,space-between);
+  }
+}
+
+.header__logo-link {
+  display: inline-block;
+  line-height: 1;
+  height: 100%;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-family: 'Revalia', cursive;
+  color: $element_color;
+}
+
+.menu {
+  @include display-align (flex,center);
+
+  &__list {
+    @include display-wrap (flex, wrap);
+  }
+
+  &__list-item {
+    margin-left: 42px;
+  }
+  
+  &__list-link {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $title_color;
+
+    &:hover {
+      color: $element_color;
+    }
+  }
+}

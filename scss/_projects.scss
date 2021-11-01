@@ -1,0 +1,53 @@
+.projects {
+  padding: 28px 0;
+  
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+  }
+
+  &__card {
+    
+    overflow: hidden;
+    font-size: 0;
+    position: relative;
+
+    &-pic {
+      object-fit: cover;
+    }
+
+    &-bg {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 100px;
+      margin-left: -50px;
+      margin-top: -29px;
+      height: 58px;
+      transform: translateY(500px);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: $secondary-bg_color;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &:hover::before {
+      opacity: 0.8;
+      transition: opacity 0.3s ease-in-out;
+    }
+    &:hover .projects__card-bg {
+      transform: translateY(0);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+}

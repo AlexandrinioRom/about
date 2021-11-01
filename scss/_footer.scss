@@ -1,0 +1,32 @@
+.footer {
+  background-color: $element_color;
+  padding: 50px 0;
+
+  &__wrapper {
+    @include display-wrap-justify (flex,wrap,space-between);
+  }
+}
+
+.footer__info {
+  &-title {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    color: $additional-text_color;
+  }
+  &-copy {
+    font-size: 13px;
+    line-height: 21px;
+    color: $additional-text_color;
+  }
+}
+
+.footer__social {
+  @include display-align(flex,center);
+
+  &-item {
+    display: flex;
+    padding-left: 22px;
+  }
+}

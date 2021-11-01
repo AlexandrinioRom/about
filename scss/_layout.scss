@@ -1,0 +1,41 @@
+.layout {
+  padding: 140px 0 146px 0;
+  background-color: $main-bg_color;
+
+  &__wrapper {
+    @include display-wrap(flex,wrap);
+  }
+
+  .container {
+    @include display-wrap-justify(flex,0,center);
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+.layout__info {
+  max-width: 50%;
+
+  &-title {
+    line-height: 79px;
+    margin-bottom: 60px;
+    font-size: 48px;
+  }
+
+  &-subs {
+    margin-bottom: 60px;
+    color: $defoult-text_color;
+  }
+
+  &-btn {
+    text-transform: uppercase;
+    padding: 25px 41px;
+    letter-spacing: 0.1em;
+    font-size: 16px;
+    background-color: $element_color;
+    color: $additional-text_color;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

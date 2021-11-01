@@ -1,0 +1,36 @@
+.numbers {
+  padding: 100px 0;
+  background-color: $element_color;
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 50px;
+  }
+}
+
+.numbers__item {
+  @include display-align (flex,center);
+  justify-content: center;
+  grid-column: 1 span;
+
+  &-pic {
+    width: 47px;
+    height: 50px;
+  }
+
+  &-text {
+    padding-left: 20px;
+  }
+
+  &-title {
+    font-weight: 500;
+    font-size: 21px;
+    margin-bottom: 10px;
+    color: $additional-text_color;
+  }
+
+  &-subtitle {
+    color: $additional-text_color;
+  }
+}

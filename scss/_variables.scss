@@ -1,0 +1,28 @@
+/*colors*/
+
+$title_color: #000;
+$defoult-text_color: #727272;
+$additional-text_color: #fff;
+$element_color: #34547a;
+$main-bg_color: #eeeff1;
+$secondary-bg_color: #34547a;
+$placeholder_color: #5f5d5d;
+$main-bg_color_mobile:#e5e5e5;
+
+/*mixins*/
+
+@mixin display-wrap($flex,$wrap){
+  display: $flex;
+  flex-wrap: $wrap;
+}
+
+@mixin display-wrap-justify($flex,$wrap,$space-between){
+  display: $flex;
+  flex-wrap: $wrap;
+  justify-content: $space-between;
+}
+
+@mixin display-align($flex,$center){
+  display: $flex;
+  align-items: $center;
+}
